@@ -4,10 +4,9 @@ A githook that validates commit messages follow a (modified) [conventional commi
 
 ## Setup
 
-**Option 1)**<br/>
-Run the [installation script](/installer.py)
+### Option 1)
+Run the [installation script](/installer.py) from your repo's root
 ```
-cd ~/my_repo_root
 curl -fsSL https://raw.githubusercontent.com/fluxdiv/cc_validator/main/installer.py | python3
 ```
 This does the following:
@@ -17,8 +16,8 @@ This does the following:
 - If not, a `~/my_repo_root/.githooks/` dir is created, and is added to the repo's git config via `git config core.hooksPath .githooks`
 - The [commit-msg hook](/commit-msg) is created/copied and set as executable
 - Setup complete, commits will not be allowed unless they follow the spec
-
-**Option 2)**<br/>
+---
+### Option 2)
 Setup the hook manually:
 - Create a `.githooks` directory in the root of your repo
 - Create a `.githooks/commit-msg` file
