@@ -2,6 +2,12 @@
 
 A githook that validates commit messages follow a (modified) [conventional commit spec](https://www.conventionalcommits.org/en/v1.0.0/)
 
+## Requirements
+
+- python3
+- git
+- curl
+
 ## Setup
 
 ### Option 1)

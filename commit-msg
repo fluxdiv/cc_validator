@@ -28,7 +28,7 @@ def check_line(first_line: str) -> bool:
         return fail(first_line, f"Invalid type '{ctype}'. Allowed: {', '.join(TYPES)}")
 
     if not desc or desc[0] in string.punctuation:
-        return fail(first_line, "Description can not be empty or start with punctuation.")
+        return fail(first_line, "Description can not be empty or start with punctuation")
 
     # passed all checks
     return True

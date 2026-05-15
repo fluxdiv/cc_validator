@@ -26,7 +26,7 @@ def run(cmd):
 repo_check = run(["git", "rev-parse", "--show-toplevel"])
 
 if repo_check.returncode != 0:
-    print("Error: not inside a Git repository.", file=sys.stderr)
+    print("Error: not inside a Git repository", file=sys.stderr)
     sys.exit(1)
 
 repo_root = Path(repo_check.stdout.strip())
@@ -76,7 +76,7 @@ if created_default_hooks_dir:
     config_result = run(["git", "config", "core.hooksPath", DEFAULT_HOOKS_DIR])
 
     if config_result.returncode != 0:
-        print("Error: failed to set git config core.hooksPath.", file=sys.stderr)
+        print("Error: failed to set git config core.hooksPath", file=sys.stderr)
         print(config_result.stderr, file=sys.stderr)
         sys.exit(1)
 
